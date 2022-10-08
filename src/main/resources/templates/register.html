@@ -1,0 +1,61 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body >
+<div style="background-color: rgb(202, 145, 233); border-bottom: 3px solid white;">
+    <h1 style="text-align: center; color: rgb(13, 99, 98); padding: 50px">ÜYELİK SAYFASI</h1>
+</div>
+
+<div class="container-fluid" style="background-color: rgb(211, 164, 237);align-items: center; padding: 30px;">
+    <div class="row">
+        <div class="col-4"></div>
+            <div class="col-4" style="background-color: rgb(58, 43, 67); border: 5px solid white; border-radius: 20px; align-items: center; padding: 50px;">
+            <form action="doregister" method="post">
+                <div class="mb-3">
+                    <label class="form-label" style="color: white">Ad</label>
+                    <input type="text" name="name" class="form-control" placeholder="Ad" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" style="color: white">Soyad</label>
+                    <input type="text" name="surname" class="form-control" placeholder="Soyad" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" style="color: white">Email Address</label>
+                    <input type="email" name="email" class="form-control" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" style="color: white">Kullanıcı Adı</label>
+                    <input type="text" name="username" class="form-control" placeholder="Kullanıcı adı" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" style="color: white">Şifre</label>
+                    <input type="password" name="password" class="form-control" placeholder="Şifre">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" style="color: white">Telefon</label>
+                    <input type="text" name="phone" class="form-control" placeholder="05_________" required>
+                </div>
+                <div class="mb-3">
+                    <input type="radio" name="gender" class="form-check-input" value="WOMAN">
+                    <label class="form-label" style="color: white">Kadın</label>
+                </div>
+                <div class="mb-3">
+                    <input type="radio" name="gender" class="form-check-input" value="MAN">
+                    <label class="form-label" style="color: white">Erkek</label>
+                </div>
+                <div class="d-grid gap-2 d-flex" style="justify-content: center">
+                    <button type="submit" class="btn btn-outline" style="color: white; border-color: white; background-color: rgb(13, 99, 98); width: 10rem">Üye Ol</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+
+</body>
+</html>
